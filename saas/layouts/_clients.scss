@@ -6,14 +6,12 @@
     margin-bottom: 50px;
     text-align: center;
   }
-  
   .clients__list {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 30px;
   }
-  
   .clients__link {
     display: flex;
     width: 170px;
@@ -24,19 +22,14 @@
     color: var(--primary-icon-color);
     border: 1px solid var(--primary-icon-color);
     border-radius: 4px;
+    transition: color var(--transition-timing) var(--cubic),
+    border-color var(--transition-timing) var(--cubic);
+    &:hover, &:focus {
+      color: var(--accent-color);
+      border-color: var(--accent-color);
+    }
   }
-  
   .clients__icon {
     fill: currentColor;
-  }
-
-  .clients__link {
-    transition: color var(--transition-timing) var(--cubic),
-      border-color var(--transition-timing) var(--cubic);
-      &:hover,
-      &:focus {
-        color: var(--accent-color);
-        border-color: var(--accent-color);
-      }
   }
   

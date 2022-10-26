@@ -2,16 +2,13 @@
     display: flex;
     flex-wrap: wrap;
   }
-  
-  .feature__item {
+    .feature__item {
     flex-basis: calc(100% / 4 - 30px);
     min-width: 270px;
     &:not(:last-child) {
       margin-right: 30px;
     }
   }
- 
-  
   .feature__image {
     display: flex;
     align-items: center;
@@ -21,7 +18,6 @@
     margin-bottom: 30px;
     background-color: var(--team-bgd-color);
   }
-  
   .feature__title {
     color: var(--title-text-color);
     font-weight: 700;
@@ -30,7 +26,6 @@
     text-transform: uppercase;
     margin-bottom: 10px;
   }
-  
   .feature__text {
     line-height: 1.71;
   }

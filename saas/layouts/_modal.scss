@@ -10,7 +10,6 @@
     transition: opacity var(--transition-timing) var(--cubic),
       visibility var(--transition-timing) var(--cubic);
   }
-  
   .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
@@ -26,16 +25,14 @@
     padding: 40px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform var(--transition-timing) var(--cubic);
+    .backdrop.is-hidden & {
+      transform: translate(-50%, -50%) scale(1.1);
+    }
   }
-  .backdrop.is-hidden .modal {
-    transform: translate(-50%, -50%) scale(1.1);
-  }
-
   .modal-form {
     display: flex;
     flex-direction: column;
   }
-  
   .modal-form__tittle {
     text-align: center;
     margin-bottom: 12px;
@@ -50,7 +47,6 @@
     display: flex;
     margin-bottom: 10px;
     flex-direction: column;
-  
     font-weight: 400;
     font-size: 12px;
     line-height: 1.16;
@@ -63,7 +59,6 @@
     padding-left: 42px;
     padding-top: 11px;
     padding-bottom: 11px;
-  
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
@@ -79,7 +74,6 @@
     outline: none;
     resize: none;
     height: 120px;
-  
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     transition: border-color var(--transition-timing) var(--cubic);
@@ -87,7 +81,6 @@
       border-color: var(--accent-color);
     }
   }
-  
   .modal-form__icon {
     position: absolute;
     top: 50%;
@@ -99,14 +92,12 @@
       fill: var(--accent-color);
     }
   }
-
   .modal-form__check {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
     transition: transform var(--transition-timing) var(--cubic);
   }
-  
   .modal-form__checkbox {
     position: absolute;
     width: 1px;
@@ -119,30 +110,23 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-  
   .modal-form__checkbox-icon {
     display: inline-block;
     width: 15px;
     height: 15px;
     margin-right: 8.35px;
-  
     border: 2px solid var(--title-text-color);
     border-radius: 2px;
+    .modal-form__checkbox:checked + & {
+      border-color: transparent;
+      background-color: var(--accent-color);
+      background-image: url(../images/full_checked.svg);
+      background-size: contain;
+      background-origin: border-box;
+    }
   }
-  
-  .modal-form__checkbox:checked + .modal-form__checkbox-icon {
-    border-color: transparent;
-    background-color: var(--accent-color);
-    background-image: url(../images/full_checked.svg);
-    background-size: contain;
-    background-origin: border-box;
-  }
-  
   .modal-form__policy {
     line-height: 1.71;
     text-decoration-line: underline;
     color: var(--accent-color);
   }
-  
- 
-  
