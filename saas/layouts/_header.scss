@@ -5,8 +5,7 @@
     display: flex;
   }
   .header__navigation {
-    display: flex;
-    align-items: center;
+    @extend %some-align;
   }
   .logo {
     display: block;
@@ -18,12 +17,11 @@
     line-height: 1.19;
     letter-spacing: 0.03em;
   }
-  .logo__text {
+  .logo__text--black {
     color: var(--black-color);
   }
   .header__list {
-    display: flex;
-    align-items: center;
+    @extend %some-align;
     margin-left: 93px;
   }
   .header__item:not(:last-child) {
@@ -60,8 +58,7 @@
     }
   }
   .contact__list {
-    display: flex;
-    align-items: center;
+    @extend %some-align;
     margin-left: auto;
   }
   .contact__link {
@@ -73,8 +70,7 @@
     letter-spacing: 0.02em;
     padding-top: 32px;
     padding-bottom: 32px;
-    display: flex;
-    align-items: center;
+    @extend %some-align;
     transition: color var(--transition-timing) var(--cubic);
     &:hover, &:focus {
       color: var(--accent-color);

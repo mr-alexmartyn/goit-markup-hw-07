@@ -13,13 +13,6 @@ img {
 a {
   text-decoration: none;
 }
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -32,10 +25,6 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 .list {
   list-style-type: none;
 }
@@ -46,3 +35,6 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
 }
+
+
+

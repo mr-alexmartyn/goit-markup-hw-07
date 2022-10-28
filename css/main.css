@@ -35,14 +35,6 @@ a {
   text-decoration: none;
 }
 
-.container {
-  width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -57,11 +49,6 @@ a {
   overflow: hidden;
 }
 
-.section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .list {
   list-style-type: none;
 }
@@ -72,6 +59,20 @@ body {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
+}
+
+.modal-form__check, .product__overlay, .join-thumb__link, .clients__link, .clients__list, .team-social__link, .work__inform, .feature__image, .contact__link, .contact__list, .header__list, .header__navigation, .modal__button, .subscribe-form__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.clients, .team, .feature {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .button {
@@ -133,15 +134,9 @@ body {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   max-height: 50px;
   border: none;
   border-radius: 4px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   cursor: pointer;
   -webkit-transition: background-color var(--transition-timing) var(--cubic);
   transition: background-color var(--transition-timing) var(--cubic);
@@ -151,12 +146,6 @@ body {
 }
 
 .modal__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -199,6 +188,14 @@ body {
   background-color: var(--active-button-background);
 }
 
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
@@ -207,15 +204,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.header__navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .logo {
@@ -229,17 +217,11 @@ body {
   letter-spacing: 0.03em;
 }
 
-.logo__text {
+.logo__text--black {
   color: var(--black-color);
 }
 
 .header__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-left: 93px;
 }
 
@@ -281,12 +263,6 @@ body {
 }
 
 .contact__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-left: auto;
 }
 
@@ -299,12 +275,6 @@ body {
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-transition: color var(--transition-timing) var(--cubic);
   transition: color var(--transition-timing) var(--cubic);
 }
@@ -368,12 +338,6 @@ body {
 }
 
 .feature__image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -433,12 +397,6 @@ body {
 
 .work__inform {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -524,12 +482,6 @@ body {
 }
 
 .team-social__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -560,12 +512,6 @@ body {
 }
 
 .clients__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -573,17 +519,11 @@ body {
 }
 
 .clients__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   width: 170px;
   height: 92px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background: #ffffff;
   color: var(--primary-icon-color);
   border: 1px solid var(--primary-icon-color);
@@ -619,7 +559,7 @@ body {
   margin-bottom: 20px;
 }
 
-.adress-thumb .logo__text {
+.adress-thumb .logo__text--white {
   color: var(--white-color);
 }
 
@@ -688,12 +628,6 @@ body {
 }
 
 .join-thumb__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -821,15 +755,9 @@ body {
 
 .product__overlay {
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   top: 0;
   left: 0;
   padding: 63px 24px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   background-color: rgba(33, 150, 243, 0.9);
   width: 100%;
   height: 100%;
@@ -980,12 +908,6 @@ body {
 }
 
 .modal-form__check {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 20px;
   -webkit-transition: -webkit-transform var(--transition-timing) var(--cubic);
   transition: -webkit-transform var(--transition-timing) var(--cubic);

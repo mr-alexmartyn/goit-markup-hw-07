@@ -1,3 +1,6 @@
+.feature{
+  @extend %section;
+}
 .feature__list {
     display: flex;
     flex-wrap: wrap;
@@ -10,8 +13,7 @@
     }
   }
   .feature__image {
-    display: flex;
-    align-items: center;
+    @extend %some-align;
     justify-content: center;
     width: 270px;
     height: 120px;

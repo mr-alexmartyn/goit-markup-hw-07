@@ -93,8 +93,7 @@
     }
   }
   .modal-form__check {
-    display: flex;
-    align-items: center;
+    @extend %some-align;
     margin-bottom: 20px;
     transition: transform var(--transition-timing) var(--cubic);
   }
